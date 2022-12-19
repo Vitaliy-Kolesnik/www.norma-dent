@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>NormaDent</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css"/>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+		<link rel="stylesheet" href="css/styles.css"/>
+	</head>
+	<body>
+
+    <div class="header__info"id="home">
+          <a class="info__link info__location">
+            <img class="location__img" src="images/info/location.png" alt="">
+            <div class="info__title">
+              <span class="title__adress lang"key="ukraine">Ukraine.Boryspol</span>
+            </div>
+          </a>
+          <a class="info__link info__email">
+            <img class="location__img" src="images/info/mail.png" alt="" >
+            <div class="info__title">
+              <span class="title__adress">normadent@gmail.com</span>
+            </div>
+          </a>
+          <a class="info__link info__hour">
+            <img class="location__img" src="images/info/clock.png" alt="" >
+            <div class="info__title">
+              <span class="title__adress lang"key="time-work">ПН-Суб: 08:00-21:00</span>
+            </div>
+          </a>
+          <a class="info__link info__phone">
+              <img class="location__img" src="images/info/phone.png" alt="" >
+            <div class="info__title">
+              <span class="title__adress">+38067-345-34-45</span>
+
+            </div>
+          </a>
+          <div class="header__lang-en">
+            <button class="translate" id="ua">UA</button>
+            <button class="translate" id="en">EN</button>
+          </div>
+    </div><!-- header__info -->
+
+    <header class="header" id="header">
+      <div class="header__nav" >
+        <div class="logo" data-scroll="#home">
+          <a href="#" class="logo__link">
+            <h3 class="logo__name">NORma<span class="logo__nam">Dent</span></h3>
+          </a>
+        </div>
+        <nav class="nav" id="nav">
+          <ul class="menu__flexblock">
+            <li class="menu__item"><a href="#" class="menu__link lang" data-scroll="#home"key="home">Головна</a></li>
+            <li class="menu__item"><a href="/index_about.html" class="menu__link lang"key="about">Про нас</a></li>
+            <li class="menu__item"><a href="#" class="menu__link lang" data-scroll="#appoinment"key="appoinment">Зворотній звязок</a></li>
+            <li class="menu__item"><a href="#" class="menu__link lang" data-scroll="#team"key="team">Наша Команда</a></li>
+            <li class="menu__item"><a href="#" class="menu__link lang" data-scroll="#insurance" key="insurance">Стахові</a></li>
+            <li class="menu__item"><a href="#" class="menu__link lang" data-scroll="#service" key="services">Послуги & Ціни</a></li>
+            <li class="menu__item"><a href="#" class="menu__link lang"data-scroll="#footer" key="works">Контакти</a></li>
+            <li class="nav__price">
+               <a class="btn__price btn--thin" href="/СV_kolesnik_EN.pdf" download="СV_kolesnik_EN.pdf">Скачати прайс</a>
+               <!-- <a class="btn btn--thin" href="#">PRINT</a> -->
+            </li>
+          </ul>
+        </nav>
+
+        <!-- <div class="navbar-socials">
+          <div class="socials-flexblock">
+            <a class="social__link" href="#" target="_blank">
+              <img src="images/social/telegram.png" alt="">
+            </a>
+            <a class="social__link" href="#" target="_blank">
+              <img src="images/social/viber.png" alt="">
+            </a>
+            <a class="social__link" href="#" target="_blank">
+              <img src="images/social/facebook.png" alt="">
+            </a>
+          </div>
+        </div> -->
+        <button class="nav-toggle" type="button" id="nav_toggle">
+          <span class="nav-toggle__item">Menu</span>
+        </button>
+      </div><!-- header__nav -->
+    </header>
+    <div class="container__page">
+      <section class="intro" id="intro" >
+        <h2 class="intro__suptitle lang" key="intro">Ми надійний партнер в сфері стамотології...
+        </h2>
+        <div class="intro__img">
+          <img src="/images/man1.png" alt="">
+        </div>
+      </section>
+      <section class="appoinment" id="appoinment" >
+          <h2 class="title lang" key="appoinment">Зворотній звязок</h2>
+          <div class="container__appoinment">
+            <div class="mt-4 p-4">
+              <div class="col-md-6">
+                <form class="form__mail" id="form" name="form" action="mail.php" method="post">
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4 lang" key="pname">Імя пацієнта</label>
+                    <div class="col-sm-8 col-lg-8">
+                      <input class="form-control" type="text" id="patient-name" name="name" placeholder="Імя"required>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4 lang"key="contact">Номер</label>
+                      <div class="col-sm-8 col-lg-8">
+                        <input class="form-control" id="contact" name="number" type="text" placeholder="Номер телефону" required>
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4 lang" key="email">Пошта</label>
+                    <div class="col-sm-8 col-lg-8">
+                    <input class="form-control" id="email" name="email" type="email" placeholder="Ваша пошта" required>
+                    </div>
+                 </div>
+
+                  <!-- <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4 lang" key="date">Date</label>
+                      <div class="col-sm-8 col-lg-8">
+                        <input class="form-control" type="date"id="date" name="data" >
+                      </div>
+                  </div> -->
+
+                  <!-- <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4 lang"key="time">Time</label>
+                      <div class="col-sm-8 col-lg-8">
+                          <input class="form-control" type="time"id="time" name="time">
+                      </div>
+                  </div> -->
+
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4 lang"key="symptoms">Симптоми</label>
+                    <div class="col-sm-8 col-lg-8">
+                      <textarea class="form-control" id="symptoms" name="message" required></textarea>
+                    </div>
+                  </div>
+
+                  <div class="form-group row c">
+                    <div class="col-sm-5">
+                      <button type="submit"class="btn btn-form lang" key="confirm">Надіслати</button>
+                    </div>
+                  </div>
+                </form>
+              </div><!--col-md-6 -->
+            </div><!--mt-4 p-4 -->
+          </div><!-- container__appoinment -->
+      </section><!-- appoinment -->
+      <section class="section__insurance" id="insurance">
+          <h2 class="title lang" key="insurance">Страхові</h2>
+          <div class="container">
+            <div class="logos">
+              <div class="logos__item">
+                  <!-- так как используем flex проще создать контейнер для images  -->
+                <img class="logos__img" src="images/logos/11.png" alt="" />
+              </div>
+              <div class="logos__item">
+                <img class="logos__img" src="images/logos/22.png" alt="" />
+              </div>
+              <div class="logos__item">
+                <img class="logos__img" src="images/logos/33.png" alt="" />
+              </div>
+              <div class="logos__item">
+                <img class="logos__img" src="images/logos/44.png" alt="" />
+              </div>
+              <div class="logos__item">
+                <img class="logos__img" src="images/logos/55.png" alt="" />
+              </div>
+              <div class="logos__item">
+                <img class="logos__img" src="images/logos/66.png" alt="" />
+              </div>
+              <div class="logos__item">
+                <img class="logos__img" src="images/logos/66.png" alt="" />
+              </div>
+              <div class="logos__item">
+                <img class="logos__img" src="images/logos/66.png" alt="" />
+              </div>
+              <div class="logos__item">
+                <img class="logos__img" src="images/logos/66.png" alt="" />
+              </div>
+              <div class="logos__item">
+                <img class="logos__img" src="images/logos/66.png" alt="" />
+              </div>
+            </div>
+          </div>
+      </section>
+      <section class="slide__container swiper" id="team">
+          <h2 class="title lang"key="team">Наша команда</h2>
+            <div class="slide__content">
+            <div class="card__wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="image__content">
+                  <div class="socials__flexblock">
+                      <a class="social__link" href="#" target="_blank">
+                        <img src="images/social/telegram.png" alt="" />
+                      </a>
+                      <a class="social__link" href="#" target="_blank">
+                        <img src="images/social/viber.png" alt="" />
+                      </a>
+                      <a class="social__link" href="#" target="_blank">
+                        <img src="images/social/facebook.png" alt="">
+                      </a>
+                  </div>
+                  <span class="overlay"></span>
+                  <div class="card__image">
+                    <img class="card__img" src="images/team/1.jpg" alt=""/>
+                  </div>
+                </div>
+                <div class="card__content">
+                  <h2 class="name lang"key="name">Vitaliy Kolesnik</h2>
+                  <p class="description lang"key="text-card">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <a href="/index_person.html" class="button__slider lang" key="view">View More</a>
+                </div>
+              </div><!-- card swiper-slide -->
+
+              <div class="card swiper-slide">
+                <div class="image__content">
+                  <div class="socials__flexblock">
+                      <a class="social__link" href="#" target="_blank">
+                        <img src="images/social/telegram.png" alt="" />
+                      </a>
+                      <a class="social__link" href="#" target="_blank">
+                        <img src="images/social/viber.png" alt="" />
+                      </a>
+                      <a class="social__link" href="#" target="_blank">
+                        <img src="images/social/facebook.png" alt="">
+                      </a>
+                  </div>
+                  <span class="overlay"></span>
+                  <div class="card__image">
+                    <img class="card__img" src="images/team/1.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="card__content">
+                  <h2 class="name lang"key="name">Vitaliy Kolesnik</h2>
+                  <p class="description lang"key="text-card">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <a href="/index_person.html" class="button__slider lang" key="view">View More</a>
+                </div>
+              </div><!-- card swiper-slide -->
+
+              <div class="card swiper-slide">
+                <div class="image__content">
+                  <div class="socials__flexblock">
+                      <a class="social__link" href="#" target="_blank">
+                        <img src="images/social/telegram.png" alt="" />
+                      </a>
+                      <a class="social__link" href="#" target="_blank">
+                        <img src="images/social/viber.png" alt="" />
+                      </a>
+                      <a class="social__link" href="#" target="_blank">
+                        <img src="images/social/facebook.png" alt="">
+                      </a>
+                  </div>
+                  <span class="overlay"></span>
+                  <div class="card__image">
+                    <img class="card__img" src="images/team/1.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="card__content">
+                  <h2 class="name lang"key="name">Vitaliy Kolesnik</h2>
+                  <p class="description lang"key="text-card">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <a href="/index_person.html" class="button__slider lang" key="view">View More</a>
+                </div>
+              </div><!-- card swiper-slide -->
+
+              <div class="card swiper-slide">
+                <div class="image__content">
+                  <div class="socials__flexblock">
+                      <a class="social__link" href="#" target="_blank">
+                        <img src="images/social/telegram.png" alt="" />
+                      </a>
+                      <a class="social__link" href="#" target="_blank">
+                        <img src="images/social/viber.png" alt="" />
+                      </a>
+                      <a class="social__link" href="#" target="_blank">
+                        <img src="images/social/facebook.png" alt="">
+                      </a>
+                  </div>
+                  <span class="overlay"></span>
+                  <div class="card__image">
+                    <img class="card__img" src="images/1.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="card__content">
+                  <h2 class="name lang"key="name">Vitaliy Kolesnik</h2>
+                  <p class="description lang"key="text-card">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <a href="/index_person.html" class="button__slider lang" key="view">View More</a>
+                </div>
+              </div><!-- card swiper-slide -->
+
+              <div class="card swiper-slide">
+                <div class="image__content">
+                  <div class="socials__flexblock">
+                      <a class="social__link" href="#" target="_blank">
+                        <img src="images/social/telegram.png" alt="" />
+                      </a>
+                      <a class="social__link" href="#" target="_blank">
+                        <img src="images/social/viber.png" alt="" />
+                      </a>
+                      <a class="social__link" href="#" target="_blank">
+                        <img src="images/social/facebook.png" alt="">
+                      </a>
+                  </div>
+                  <span class="overlay"></span>
+                  <div class="card__image">
+                    <img class="card__img" src="images/1.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="card__content">
+                  <h2 class="name lang"key="name">Vitaliy Kolesnik</h2>
+                  <p class="description lang"key="text-card">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                <a href="/index_person.html" class="button__slider lang" key="view">View More</a>
+                </div>
+              </div><!-- card swiper-slide -->
+
+              <div class="card swiper-slide">
+                <div class="image__content">
+                  <div class="socials__flexblock">
+                      <a class="social__link" href="#" target="_blank">
+                        <img src="images/social/telegram.png" alt="" />
+                      </a>
+                      <a class="social__link" href="#" target="_blank">
+                        <img src="images/social/viber.png" alt="" />
+                      </a>
+                      <a class="social__link" href="#" target="_blank">
+                        <img src="images/social/facebook.png" alt="">
+                      </a>
+                  </div>
+                  <span class="overlay"></span>
+                  <div class="card__image">
+                    <img class="card__img" src="images/1.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="card__content">
+                  <h2 class="name lang"key="name">Vitaliy Kolesnik</h2>
+                  <p class="description lang"key="text-card">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <a href="/index_person.html" class="button__slider lang" key="view">View More</a>
+                </div>
+              </div><!-- card swiper-slide -->
+
+              <div class="card swiper-slide">
+                <div class="image__content">
+                  <div class="socials__flexblock">
+                      <a class="social__link" href="#" target="_blank">
+                        <img src="images/social/telegram.png" alt="" />
+                      </a>
+                      <a class="social__link" href="#" target="_blank">
+                        <img src="images/social/viber.png" alt="" />
+                      </a>
+                      <a class="social__link" href="#" target="_blank">
+                        <img src="images/social/facebook.png" alt="">
+                      </a>
+                  </div>
+                  <span class="overlay"></span>
+                  <div class="card__image">
+                    <img class="card__img" src="images/1.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="card__content">
+                  <h2 class="name lang"key="name">Vitaliy Kolesnik</h2>
+                  <p class="description lang"key="text-card">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <a href="/index_person.html" class="button__slider lang" key="view">View More</a>
+                </div>
+              </div><!-- card swiper-slide -->
+
+              <div class="card swiper-slide">
+                <div class="image__content">
+                  <div class="socials__flexblock">
+                      <a class="social__link" href="#" target="_blank">
+                        <img src="images/social/telegram.png" alt="" />
+                      </a>
+                      <a class="social__link" href="#" target="_blank">
+                        <img src="images/social/viber.png" alt="" />
+                      </a>
+                      <a class="social__link" href="#" target="_blank">
+                        <img src="images/social/facebook.png" alt="">
+                      </a>
+                  </div>
+                  <span class="overlay"></span>
+                  <div class="card__image">
+                    <img class="card__img" src="images/1.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="card__content">
+                  <h2 class="name lang"key="name">Vitaliy Kolesnik</h2>
+                  <p class="description lang"key="text-card">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <a href="/index_person.html" class="button__slider lang" key="view">View More</a>
+                </div>
+              </div><!-- card swiper-slide -->
+
+              <div class="card swiper-slide">
+                <div class="image__content">
+                  <div class="socials__flexblock">
+                      <a class="social__link" href="#" target="_blank">
+                        <img src="images/social/telegram.png" alt="" />
+                      </a>
+                      <a class="social__link" href="#" target="_blank">
+                        <img src="images/social/viber.png" alt="" />
+                      </a>
+                      <a class="social__link" href="#" target="_blank">
+                        <img src="images/social/facebook.png" alt="">
+                      </a>
+                  </div>
+                  <span class="overlay"></span>
+                  <div class="card__image">
+                    <img class="card__img" src="images/1.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="card__content">
+                  <h2 class="name lang"key="name">Vitaliy Kolesnik</h2>
+                  <p class="description lang"key="text-card">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <a href="/index_person.html" class="button__slider lang" key="view">View More</a>
+                </div>
+              </div><!-- card swiper-slide -->
+
+            </div><!-- card__wrapper -->
+            </div><!-- slide__content -->
+              <!-- <div class="swiper-button-next swiper-navBtn"></div>
+              <div class="swiper-button-prev swiper-navBtn"></div> -->
+            <div class="swiper-pagination"></div>
+      </section><!-- slide__container -->
+      <section class="service" id="service">
+        <a class="title lang" href="/index_service.html"key="service">Послуги & Ціни</a>
+        <div class="service__column">
+          <div class="service__item">
+            <div class="service__img">
+              <img src="/images/service/1.png" alt="">
+            </div>
+            <h4 class="service__title">
+              <a class="service__title-link lang" href="/index_service.html"key="surgery">SURGERY AND IMPLANTATION</a>
+            </h4>
+            <div class="service__list">
+              <ul>
+                <li>
+                  <a class="service__list-link lang"href="#"key="surgery-and">Surgery and implantation in our clinic</a>
+                </li>
+                <li>
+                  <a class="service__list-link lang"href="#"key="first">The first appointment of a surgeon-implantologist</a>
+                </li>
+                <li>
+                  <a class="service__list-link lang"href="#"key="stage">Two-stage (classic) dental implantation</a>
+                </li>
+              </ul>
+            </div>
+            <div class="service__more">
+              <a class="service__more-link lang" href="/index_service.html" key="read">Читати більше & Ціни ></a>
+            </div>
+          </div>
+        </div>
+        <div class="service__column">
+          <div class="service__item">
+            <div class="service__img">
+              <img src="/images/service/2.png" alt="">
+            </div>
+            <h4 class="service__title">
+              <a class="service__title-link lang" href="#">SURGERY AND IMPLANTATION</a>
+            </h4>
+            <div class="service__list">
+              <ul>
+                <li>
+                  <a class="service__list-link lang"href="#">Surgery and implantation in our clinic</a>
+                </li>
+                <li>
+                  <a class="service__list-link"href="#">The first appointment of a surgeon-implantologist</a>
+                </li>
+                <li>
+                  <a class="service__list-link"href="#">Two-stage (classic) dental implantation</a>
+                </li>
+              </ul>
+            </div>
+            <div class="service__more">
+              <a class="service__more-link" href="/index_service.html" >Читати більше & Ціни ></a>
+            </div>
+          </div>
+        </div>
+        <div class="service__column">
+          <div class="service__item">
+            <div class="service__img">
+              <img src="/images/service/3.png" alt="">
+            </div>
+            <h4 class="service__title">
+              <a class="service__title-link" href="#">SURGERY AND IMPLANTATION</a>
+            </h4>
+            <div class="service__list">
+              <ul>
+                <li>
+                  <a class="service__list-link"href="#">Surgery and implantation in our clinic</a>
+                </li>
+                <li>
+                  <a class="service__list-link"href="#">The first appointment of a surgeon-implantologist</a>
+                </li>
+                <li>
+                  <a class="service__list-link"href="#">Two-stage (classic) dental implantation</a>
+                </li>
+              </ul>
+            </div>
+            <div class="service__more">
+              <a class="service__more-link" href="/index_service.html" >Читати більше & Ціни ></a>
+            </div>
+          </div>
+        </div>
+        <div class="service__column">
+          <div class="service__item">
+            <div class="service__img">
+              <img src="/images/service/4.png" alt="">
+            </div>
+            <h4 class="service__title">
+              <a class="service__title-link" href="#">SURGERY AND IMPLANTATION</a>
+            </h4>
+            <div class="service__list">
+              <ul>
+                <li>
+                  <a class="service__list-link"href="#">Surgery and implantation in our clinic</a>
+                </li>
+                <li>
+                  <a class="service__list-link"href="#">The first appointment of a surgeon-implantologist</a>
+                </li>
+                <li>
+                  <a class="service__list-link"href="#">Two-stage (classic) dental implantation</a>
+                </li>
+              </ul>
+            </div>
+            <div class="service__more">
+              <a class="service__more-link" href="/index_service.html" >Читати більше & Ціни ></a>
+            </div>
+          </div>
+        </div>
+        <div class="service__column">
+          <div class="service__item">
+            <div class="service__img">
+              <img src="/images/service/5.png" alt="">
+            </div>
+            <h4 class="service__title">
+              <a class="service__title-link" href="#">SURGERY AND IMPLANTATION</a>
+            </h4>
+            <div class="service__list">
+              <ul>
+                <li>
+                  <a class="service__list-link"href="#">Surgery and implantation in our clinic</a>
+                </li>
+                <li>
+                  <a class="service__list-link"href="#">The first appointment of a surgeon-implantologist</a>
+                </li>
+                <li>
+                  <a class="service__list-link"href="#">Two-stage (classic) dental implantation</a>
+                </li>
+              </ul>
+            </div>
+            <div class="service__more">
+              <a class="service__more-link" href="/index_service.html" >Читати більше & Ціни ></a>
+            </div>
+          </div>
+        </div>
+        <div class="service__column">
+          <div class="service__item">
+            <div class="service__img">
+              <img src="/images/service/6.png" alt="">
+            </div>
+            <h4 class="service__title">
+              <a class="service__title-link" href="#">SURGERY AND IMPLANTATION</a>
+            </h4>
+            <div class="service__list">
+              <ul>
+                <li>
+                  <a class="service__list-link"href="#">Surgery and implantation in our clinic</a>
+                </li>
+                <li>
+                  <a class="service__list-link"href="#">The first appointment of a surgeon-implantologist</a>
+                </li>
+                <li>
+                  <a class="service__list-link"href="#">Two-stage (classic) dental implantation</a>
+                </li>
+              </ul>
+            </div>
+            <div class="service__more">
+              <a class="service__more-link" href="/index_service.html"  >Читати більше & Ціни ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery" id="works">
+        <h2 class="title lang"key="works">Наші роботи</h2>
+        <div class="gallery-list">
+          <a href="images/img/beetle.jpg" class="gallery-item">
+            <div class="gallery-item-hover lang"key="see">Бачити більше..</div>
+            <img src="images/img/beetle.jpg" alt="alt">
+          </a>
+          <a href="images/img/liberty.jpg" class="gallery-item">
+            <div class="gallery-item-hover lang"key="see">Бачити більше..</div>
+            <img src="images/img/liberty.jpg" alt="alt">
+          </a>
+          <a href="images/img/lighthouse.jpg" class="gallery-item">
+            <div class="gallery-item-hover lang"key="see">Бачити більше..</div>
+            <img src="images/img/lighthouse.jpg" alt="alt">
+          </a>
+          <a href="images/img/minimalismo.jpg" class="gallery-item">
+            <div class="gallery-item-hover lang"key="see">Бачити більше..</div>
+            <img src="images/img/minimalismo.jpg" alt="alt">
+          </a>
+          <a href="images/img/salad.jpg" class="gallery-item">
+            <div class="gallery-item-hover lang"key="see">Бачити більше..</div>
+            <img src="images/img/salad.jpg" alt="alt">
+          </a>
+          <a href="images/img/shutterbug.jpg" class="gallery-item">
+            <div class="gallery-item-hover lang"key="see">Бачити більше..</div>
+            <img src="images/img/shutterbug.jpg" alt="alt">
+          </a>
+          <a href="images/img/skaterboy.jpg" class="gallery-item">
+            <div class="gallery-item-hover lang"key="see">Бачити більше..</div>
+            <img src="images/img/skaterboy.jpg" alt="alt">
+          </a>
+          <a href="images/img/woodcraft.jpg" class="gallery-item">
+            <div class="gallery-item-hover lang"key="see">Бачити більше..</div>
+            <img src="images/img/woodcraft.jpg" alt="alt">
+          </a>
+        </div>
+      </section><!-- gallery -->
+      <section class="section__map">
+          <div class="map">
+            <a class="map__link" href="https://goo.gl/maps/GxLjthwFA9Bhx5np7" target="_blank">
+              <i class="fa fa-map-marker"></i>
+              <h2 class="map__title lang"key="open">Відкрити карту</h2>
+            </a>
+          </div>
+      </section>
+    </div><!-- container-->
+    <footer class="footer-distributed" id="footer">
+      <div class="footer-left">
+        <h3>NORma<span>Dent</span></h3>
+        <p class="footer-links ">
+          <a class="home lang" href="#"key="home">Головна</a>
+            |
+          <a class="about lang" href="#"key="about">Про нас</a>
+            |
+          <a class="contacts lang" href="#"key="contacts">Контакти</a>
+            |
+          <a class="services lang" href="#"key="services">Послуги</a>
+        </p>
+        <p class="footer-company-name">Copyright © 2021
+        <strong>Vitaliy Kolesnik</strong> All rights reserved</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+            <p><span>Ghaziabad</span>Delhi</p>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+91 74**9**258</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:sagar00001.co@gmail.com">xyz@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <div>
+          <a href="index_about.html" class="footer__about lang"  key="about">Про нашу компанію</a>
+          </div>
+          <strong key="sagar">Sagar Developer is a Youtube channel where you can find more creative CSS Animations and Effects along with HTML, JavaScript and Projects using C/C++.
+          </strong>
+        </p>
+        <!-- <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+        </div> -->
+      </div>
+    </footer><!-- footer-->
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+	</body>
+</html>
